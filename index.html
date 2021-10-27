@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="PL">
+<head>
+    <meta charset="UTF-8" />
+    <link type="text/css" rel="stylesheet" href="style.css"  />
+    <script type="text/javascript" src="js_calc.js"></script>
+</head>
+<body>
+    <header>
+        <h1>JS Calculator</h1>
+    </header>
+   <div id="main">
+        <div id="calc_main">
+            calc_main
+            <div id="calc_case">
+                <div id="calc_lcd">
+                    <p id="calc_display">0</p>
+                </div>
+                        <div id="calc_buttons">
+                         <div id="calc_digits">
+                                <div class="calc_btn">
+                                    <button type="button" onclick=calculation.readInput(7)>7</button>
+                                </div>
+                                <div class="calc_btn">
+                                    <button type="button" onclick=calculation.readInput(8)>8</button>
+                                </div>
+                                <div class="calc_btn">
+                                    <button type="button" onclick=calculation.readInput(9)>9</button>
+                                </div>
+
+                                <div style="clear: both"></div>
+                                
+                                <div class="calc_btn">
+                                    <button type="button" onclick=calculation.readInput(4)>4</button>
+                                </div>
+                                <div class="calc_btn">
+                                    <button type="button" onclick=calculation.readInput(5)>5</button>
+                                </div>
+                                <div class="calc_btn">
+                                    <button type="button" onclick=calculation.readInput(6)>6</button>
+                                </div>
+                                
+                                <div style="clear: both"></div>
+
+                                <div class="calc_btn">
+                                    <button type="button" onclick=calculation.readInput(1)>1</button>
+                                </div>
+                                <div class="calc_btn">
+                                    <button type="button" onclick=calculation.readInput(2)>2</button>
+                                </div>
+                                <div class="calc_btn">
+                                    <button type="button" onclick=calculation.readInput(3)>3</button>
+                                </div>
+
+                                <div style="clear: both;"></div>
+                            </div> <!-- calc_digits -->
+
+
+                            <div class="calc_btn">
+                                <button type="button" onclick=calculation.readInput(0)>0</button>
+                            </div>
+                            <div class="calc_btn">
+                                <button type="button" onclick=calculation.readInput('.')>.</button>
+                            </div>
+                            <div class="calc_btn">
+                                <button type="button">&nbsp;</button>
+                            </div>
+                            <div style="clear: both"></div>                    
+
+                            <div class="calc_btn">
+                                <button type="button" onclick=calculation.readInput('/')>/</button>
+                            </div>
+                            <div class="calc_btn">
+                                <button type="button" onclick=calculation.readInput('*')>*</button>
+                            </div>
+                            <div class="calc_btn">
+                                <button type="button" onclick=calculation.readInput('C')>CE</button>
+                            </div>
+
+                            <div style="clear: both"></div>
+
+                            <div class="calc_btn">
+                                <button type="button" onclick=calculation.readInput('+')>+</button>
+                            </div>
+                            <div class="calc_btn">
+                                <button type="button" onclick=calculation.readInput('-')>-</button>
+                            </div>
+                            <div class="calc_btn">
+                                <button type="button" onclick=calculation.readInput('=')>=</button>
+                            </div>
+
+                            <div style="clear: both"></div>
+                        </div> <!-- calc_buttons -->
+
+            </div>
+            
+        </div>   <!-- calc_main -->
+
+        <div id="states_map">
+            states_map
+            <h1 id="debug"></h1>
+            <h1 id="debug_operand1"></h1>
+            <h1 id="debug_operand2"></h1>
+            <!-- <h1>States Map</h1> -->
+
+        </div>
+        <div style="clear: both"></div>
+   </div>
+
+</body>
+
+</html>
+
